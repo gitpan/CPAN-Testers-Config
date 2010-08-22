@@ -1,0 +1,69 @@
+{
+   "abstract" : "Manage CPAN Testers configuration data",
+   "author" : [
+      "David Golden <dagolden@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.102160",
+   "license" : [
+      "apache_2_0"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "CPAN-Testers-Config",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "examples",
+         "corpus"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "Data::Dumper" : 0,
+            "File::Basename" : 0,
+            "File::HomeDir" : 0,
+            "File::Path" : 0,
+            "File::Spec" : 0,
+            "perl" : "5.006"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "provides" : {
+      "CPAN::Testers::Config" : {
+         "file" : "lib/CPAN/Testers/Config.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-Testers-Config"
+      },
+      "homepage" : "http://github.com/dagolden/cpan-testers-config/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/dagolden/cpan-testers-config.git",
+         "web" : "http://github.com/dagolden/cpan-testers-config/tree"
+      }
+   },
+   "version" : "0.001"
+}
+
