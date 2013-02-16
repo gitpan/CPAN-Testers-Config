@@ -2,38 +2,43 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Manage CPAN Testers configuration data',
-  'AUTHOR' => 'David Golden <dagolden@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "Manage CPAN Testers configuration data",
+  "AUTHOR" => "David Golden <dagolden\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "ExtUtils::MakeMaker" => 0,
+    "File::Find" => 0,
+    "File::Spec::Functions" => 0,
+    "File::Temp" => 0,
+    "List::Util" => 0,
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'CPAN-Testers-Config',
-  'EXE_FILES' => [],
-  'LICENSE' => 'apache',
-  'NAME' => 'CPAN::Testers::Config',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'Data::Dumper' => '0',
-    'File::Basename' => '0',
-    'File::HomeDir' => '0',
-    'File::Path' => '0',
-    'File::Spec' => '0'
+  "DISTNAME" => "CPAN-Testers-Config",
+  "EXE_FILES" => [],
+  "LICENSE" => "apache",
+  "NAME" => "CPAN::Testers::Config",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Data::Dumper" => 0,
+    "File::Basename" => 0,
+    "File::HomeDir" => 0,
+    "File::Path" => 0,
+    "File::Spec" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.001',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.002",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

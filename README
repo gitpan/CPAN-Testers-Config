@@ -2,7 +2,7 @@ NAME
     CPAN::Testers::Config - Manage CPAN Testers configuration data
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
          use CPAN::Testers::Config;
@@ -80,7 +80,7 @@ USAGE
   config_file
        $file = CPAN::Testers::Config->config_file;
 
-    Returns a path to the CPAN Testesr configuration file. See
+    Returns a path to the CPAN Testers configuration file. See
     "ENVIRONMENT".
 
 ENVIRONMENT
@@ -93,11 +93,25 @@ ENVIRONMENT
     Specifies an alternate file for configuration data instead of
     'config.pl' in the default or alternate configuration directory.
 
+SUPPORT
+  Bugs / Feature Requests
+    Please report any bugs or feature requests through the issue tracker at
+    <https://github.com/dagolden/cpan-testers-config/issues>. You will be
+    notified automatically of any progress on your issue.
+
+  Source Code
+    This is open source software. The code repository is available for
+    public review and contribution under the terms of the license.
+
+    <https://github.com/dagolden/cpan-testers-config>
+
+      git clone git://github.com/dagolden/cpan-testers-config.git
+
 AUTHOR
     David Golden <dagolden@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2010 by David Golden.
+    This software is Copyright (c) 2013 by David Golden.
 
     This is free software, licensed under:
 

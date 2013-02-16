@@ -1,20 +1,9 @@
-# 
-# This file is part of CPAN-Testers-Config
-# 
-# This software is Copyright (c) 2010 by David Golden.
-# 
-# This is free software, licensed under:
-# 
-#   The Apache License, Version 2.0, January 2004
-# 
 use 5.006;
 use strict;
 use warnings;
 package CPAN::Testers::Config;
-BEGIN {
-  $CPAN::Testers::Config::VERSION = '0.001';
-}
 # ABSTRACT: Manage CPAN Testers configuration data
+our $VERSION = '0.002'; # VERSION
 
 use Carp            ();
 use Data::Dumper    ();
@@ -108,7 +97,7 @@ sub _data_dump {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -118,7 +107,7 @@ CPAN::Testers::Config - Manage CPAN Testers configuration data
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -204,7 +193,7 @@ Returns a path to the CPAN Testers configuration directory.  See L</ENVIRONMENT>
 
    $file = CPAN::Testers::Config->config_file;
 
-Returns a path to the CPAN Testesr configuration file.  See L</ENVIRONMENT>.
+Returns a path to the CPAN Testers configuration file.  See L</ENVIRONMENT>.
 
 =head1 ENVIRONMENT
 
@@ -218,21 +207,35 @@ instead of the default '.cpantesters' in the user's home directory.
 Specifies an alternate file for configuration data instead of 'config.pl' in
 the default or alternate configuration directory.
 
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
+
+=head1 SUPPORT
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the issue tracker
+at L<https://github.com/dagolden/cpan-testers-config/issues>.
+You will be notified automatically of any progress on your issue.
+
+=head2 Source Code
+
+This is open source software.  The code repository is available for
+public review and contribution under the terms of the license.
+
+L<https://github.com/dagolden/cpan-testers-config>
+
+  git clone git://github.com/dagolden/cpan-testers-config.git
+
 =head1 AUTHOR
 
 David Golden <dagolden@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by David Golden.
+This software is Copyright (c) 2013 by David Golden.
 
 This is free software, licensed under:
 
   The Apache License, Version 2.0, January 2004
 
 =cut
-
-
-__END__
-
-
